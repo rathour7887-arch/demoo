@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>AURA DERMA & HAIR STUDIO | Dr. Aarav Mehta, MD | Luxury Dermatology & Sapphire FUE Hair Restoration</title>
+  <meta name="description" content="India's premier clinic for bespoke laser dermatology, robotic-precision Sapphire FUE hair restoration, and undetectable facial aesthetics led by Dr. Aarav Mehta (MD Dermatology, ISHRS Fellow). Bandra West, Mumbai & Indiranagar, Bengaluru.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23FAF7F2' stroke='%23C5A059' stroke-width='4'/><text x='50%' y='58%' font-family='serif' font-size='44' font-weight='600' fill='%23141413' text-anchor='middle' dominant-baseline='middle'>A</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            alabaster: '#FAF7F2',
+            ivory: '#FFFFFF',
+            espresso: '#141413',
+            charcoal: '#222220',
+            muted: '#6E6E68',
+            gold: { DEFAULT: '#C5A059', hover: '#B38E46', light: '#E2CA96', border: 'rgba(197, 160, 89, 0.28)' },
+            sage: { DEFAULT: '#4A6B5D', light: '#EDF3F0', dark: '#2A3F36' }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            'luxury': '0 20px 40px -15px rgba(20, 20, 19, 0.05)',
+            'luxury-hover': '0 30px 60px -15px rgba(197, 160, 89, 0.15)',
+            'modal': '0 25px 70px -10px rgba(20, 20, 19, 0.35)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #FAF7F2; }
+    ::-webkit-scrollbar-thumb { background: #C5A059; border-radius: 4px; }
+    ::selection { background-color: #C5A059; color: #FAF7F2; }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #C5A059 0%, #DFCA95 50%, #B38E46 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .border-gold-subtle { border: 1px solid rgba(197, 160, 89, 0.25); }
+    .glass-nav { background: rgba(250, 247, 242, 0.90); backdrop-filter: blur(16px); }
+    .glass-card { background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(12px); }
+    @keyframes pulse-emerald { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.35); opacity: 0.6; } }
+    .pulse-beacon { animation: pulse-emerald 2s infinite; }
+    @keyframes subtle-float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-7px); } }
+    .animate-float { animation: subtle-float 5s ease-in-out infinite; }
+    .comparison-container { position: relative; overflow: hidden; user-select: none; touch-action: pan-y; }
+    .comparison-slider-handle { position: absolute; top: 0; bottom: 0; width: 3px; background-color: #C5A059; cursor: ew-resize; z-index: 25; transform: translateX(-50%); }
+    .safe-bottom-padding { padding-bottom: env(safe-area-inset-bottom, 16px); }
+    @keyframes slide-in-up { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .toast-animate { animation: slide-in-up 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+  </style>
+</head>
+<body class="bg-alabaster text-espresso font-sans antialiased pb-24 md:pb-0">
+
+  <!-- 1. TOP ANNOUNCEMENT BAR -->
+  <div class="bg-espresso text-alabaster text-xs py-2 px-4 border-b border-gold/20">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-2 text-center sm:text-left">
+        <span class="w-2 h-2 rounded-full bg-gold pulse-beacon"></span>
+        <span class="font-medium"><strong class="text-gold">Complimentary 3D VISIA™ Diagnostic Analysis</strong> with every Doctor Consultation • Mumbai & Bengaluru</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs">
+        <span class="hidden md:inline text-zinc-300"><i class="fa-regular fa-clock text-gold mr-1"></i> Mon - Sat: 10:00 AM - 8:00 PM</span>
+        <a href="tel:+919876543210" class="hover:text-gold transition-colors flex items-center gap-1 text-gold"><i class="fa-solid fa-phone-volume text-[11px]"></i> +91 98765 43210</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. STICKY NAVBAR -->
+  <header id="main-header" class="sticky top-0 z-40 w-full glass-nav border-b border-gold-subtle transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="#" class="flex items-center gap-3 group focus:outline-none">
+          <div class="w-11 h-11 rounded-full border border-gold flex items-center justify-center bg-white shadow-sm group-hover:border-gold-hover transition-colors">
+            <span class="font-serif text-2xl font-bold text-espresso group-hover:text-gold transition-colors">A</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif text-2xl sm:text-3xl font-semibold tracking-wider text-espresso leading-none">AURA</span>
+            <span class="text-[9px] sm:text-[10px] font-medium tracking-[0.22em] text-muted uppercase mt-0.5">Derma & Hair Studio</span>
+          </div>
+        </a>
+        <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium text-charcoal">
+          <a href="#treatments" class="hover:text-gold transition-colors">Signature Treatments</a>
+          <a href="#diagnostic-quiz" class="hover:text-gold transition-colors flex items-center gap-1"><span>60-Sec AI Quiz</span><span class="px-1.5 py-0.5 text-[10px] font-bold rounded bg-gold/15 text-gold border border-gold/30">AI</span></a>
+          <a href="#transformations" class="hover:text-gold transition-colors">Before & After</a>
+          <a href="#doctor" class="hover:text-gold transition-colors">Dr. Aarav Mehta</a>
+          <a href="#technology" class="hover:text-gold transition-colors">FDA Tech Suite</a>
+          <a href="#testimonials" class="hover:text-gold transition-colors">Reviews</a>
+          <a href="#faqs" class="hover:text-gold transition-colors">FAQs</a>
+        </nav>
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="https://wa.me/919876543210?text=Hello%20Aura%20Studio,%20I%20would%20like%20to%20inquire%20about%20a%20private%20consultation." target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-full border border-gold-subtle text-xs font-semibold text-charcoal hover:bg-white hover:text-gold transition-all flex items-center gap-2">
+            <i class="fa-brands fa-whatsapp text-emerald-600 text-sm"></i>
+            <span class="hidden md:inline">WhatsApp Concierge</span>
+          </a>
+          <button onclick="openBookingModal()" class="px-5 py-2.5 rounded-full bg-gold hover:bg-gold-hover text-white text-xs font-semibold tracking-wider uppercase transition-all shadow-sm flex items-center gap-2 group">
+            <span>Book Consultation</span>
+            <i class="fa-solid fa-arrow-right text-[11px] group-hover:translate-x-0.5 transition-transform"></i>
+          </button>
+        </div>
+        <div class="flex items-center gap-2 lg:hidden">
+          <button onclick="openBookingModal()" class="sm:hidden px-3 py-1.5 rounded-full bg-gold text-white text-[11px] font-semibold tracking-wider uppercase">Book</button>
+          <button onclick="toggleMobileMenu()" class="p-2.5 rounded-lg text-charcoal hover:text-gold focus:outline-none" aria-label="Toggle Navigation Drawer">
+            <i id="hamburger-icon" class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE SLIDE-OUT DRAWER -->
+  <div id="mobile-drawer-backdrop" onclick="toggleMobileMenu()" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden"></div>
+  <div id="mobile-drawer" class="fixed top-0 right-0 bottom-0 z-50 w-full max-w-xs bg-alabaster shadow-2xl transform translate-x-full transition-transform duration-300 ease-out flex flex-col justify-between overflow-y-auto lg:hidden border-l border-gold-subtle">
+    <div class="p-6">
+      <div class="flex items-center justify-between pb-4 border-b border-gold-subtle">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-full border border-gold flex items-center justify-center bg-white"><span class="font-serif text-lg font-bold text-espresso">A</span></div>
+          <div><div class="font-serif text-lg font-semibold tracking-wider text-espresso">AURA</div><div class="text-[8px] tracking-widest text-muted uppercase">Derma & Hair Studio</div></div>
+        </div>
+        <button onclick="toggleMobileMenu()" class="w-8 h-8 rounded-full bg-white border border-zinc-200 flex items-center justify-center text-charcoal"><i class="fa-solid fa-xmark text-sm"></i></button>
+      </div>
+      <div class="mt-5 flex flex-col space-y-3 text-sm font-medium text-charcoal">
+        <a href="#treatments" onclick="toggleMobileMenu()" class="py-2 border-b border-zinc-100 flex items-center justify-between"><span><i class="fa-solid fa-wand-magic-sparkles text-gold mr-2"></i> Signature Treatments</span><i class="fa-solid fa-chevron-right text-xs text-zinc-400"></i></a>
+        <a href="#diagnostic-quiz" onclick="toggleMobileMenu()" class="py-2 border-b border-zinc-100 flex items-center justify-between"><span><i class="fa-solid fa-brain text-gold mr-2"></i> 60-Sec AI Quiz</span><span class="px-1.5 py-0.5 text-[9px] font-bold rounded bg-gold/15 text-gold">AI</span></a>
+        <a href="#transformations" onclick="toggleMobileMenu()" class="py-2 border-b border-zinc-100 flex items-center justify-between"><span><i class="fa-solid fa-sliders text-gold mr-2"></i> Before & After</span><i class="fa-solid fa-chevron-right text-xs text-zinc-400"></i></a>
+        <a href="#doctor" onclick="toggleMobileMenu()" class="py-2 border-b border-zinc-100 flex items-center justify-between"><span><i class="fa-solid fa-user-doctor text-gold mr-2"></i> Dr. Aarav Mehta</span><i class="fa-solid fa-chevron-right text-xs text-zinc-400"></i></a>
+        <a href="#technology" onclick="toggleMobileMenu()" class="py-2 border-b border-zinc-100 flex items-center justify-between"><span><i class="fa-solid fa-shield-halved text-gold mr-2"></i> US-FDA Tech Suite</span><i class="fa-solid fa-chevron-right text-xs text-zinc-400"></i></a>
+        <a href="#testimonials" onclick="toggleMobileMenu()" class="py-2 border-b border-zinc-100 flex items-center justify-between"><span><i class="fa-solid fa-star text-gold mr-2"></i> Patient Reviews</span><i class="fa-solid fa-chevron-right text-xs text-zinc-400"></i></a>
+        <a href="#faqs" onclick="toggleMobileMenu()" class="py-2 border-b border-zinc-100 flex items-center justify-between"><span><i class="fa-solid fa-circle-question text-gold mr-2"></i> FAQs</span><i class="fa-solid fa-chevron-right text-xs text-zinc-400"></i></a>
+        <a href="#contact" onclick="toggleMobileMenu()" class="py-2 border-b border-zinc-100 flex items-center justify-between"><span><i class="fa-solid fa-location-dot text-gold mr-2"></i> Clinic Branches</span><i class="fa-solid fa-chevron-right text-xs text-zinc-400"></i></a>
+      </div>
+      <div class="mt-6 bg-white p-3.5 rounded-xl border border-gold-subtle text-xs">
+        <div class="text-[10px] uppercase font-bold text-muted mb-1">VIP Concierge</div>
+        <a href="tel:+919876543210" class="font-bold text-espresso text-sm hover:text-gold"><i class="fa-solid fa-phone text-gold mr-1.5"></i> +91 98765 43210</a>
+        <div class="text-[10px] text-muted mt-1">Bandra West & Indiranagar Flagships</div>
+      </div>
+    </div>
+    <div class="p-5 border-t border-gold-subtle bg-white/70 space-y-2">
+      <button onclick="toggleMobileMenu(); openBookingModal();" class="w-full py-3 rounded-full bg-gold text-white text-xs font-semibold uppercase tracking-wider shadow">Book Consultation</button>
+      <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-full border border-gold-subtle bg-white text-charcoal text-xs font-semibold uppercase tracking-wider flex items-center justify-center gap-2"><i class="fa-brands fa-whatsapp text-emerald-600"></i> WhatsApp Concierge</a>
+    </div>
+  </div>
+
+  <!-- 3. MOBILE STICKY BOTTOM ACTION BAR -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-gold-subtle shadow-2xl p-3 safe-bottom-padding">
+    <div class="grid grid-cols-2 gap-3 max-w-md mx-auto">
+      <a href="https://wa.me/919876543210?text=Hello%20Dr.%20Aarav%20Mehta%20AURA%20Studio,%20I%20would%20like%20to%20inquire%20about%20a%20consultation." target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-3 px-3 rounded-full border border-emerald-500/40 bg-emerald-50 text-emerald-800 text-xs font-bold tracking-wide shadow-sm">
+        <span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span></span>
+        <i class="fa-brands fa-whatsapp text-base text-emerald-600"></i>
+        <span>WhatsApp Clinic</span>
+      </a>
+      <button onclick="openBookingModal()" class="flex items-center justify-center gap-2 py-3 px-3 rounded-full bg-gradient-to-r from-gold via-[#D8B66E] to-gold-hover text-white text-xs font-bold tracking-wider uppercase shadow-md">
+        <i class="fa-regular fa-calendar-check text-sm"></i>
+        <span>Book Consult</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- 4. HERO SECTION -->
+  <section class="relative pt-8 pb-16 lg:pt-16 lg:pb-24 overflow-hidden border-b border-gold-subtle">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-7 flex flex-col items-start text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-gold-subtle shadow-sm mb-5">
+            <span class="w-2 h-2 rounded-full bg-gold pulse-beacon"></span>
+            <span class="text-xs font-semibold tracking-wider uppercase text-charcoal">US-FDA Cleared Suite • 15,000+ Transformations</span>
+          </div>
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal leading-[1.12] text-espresso tracking-tight">
+            Where Clinical Precision Meets The Art of <span class="italic font-normal gold-gradient-text">Timeless Radiance</span>.
+          </h1>
+          <p class="mt-5 text-sm sm:text-base text-muted max-w-xl leading-relaxed">
+            Led exclusively by <strong class="text-espresso font-semibold">Dr. Aarav Mehta (MD Dermatology, ISHRS Fellow)</strong>, Aura specializes in bespoke cellular skin rejuvenation, zero-downtime medical lasers, and permanent micro-density Sapphire FUE hair restoration.
+          </p>
+          <div class="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 w-full sm:w-auto">
+            <button onclick="openBookingModal()" class="px-7 py-3.5 rounded-full bg-gold hover:bg-gold-hover text-white text-xs sm:text-sm font-semibold tracking-widest uppercase transition-all shadow-md flex items-center justify-center gap-2.5 group">
+              <i class="fa-regular fa-calendar-check text-sm"></i>
+              <span>Book Private Consultation</span>
+              <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+            </button>
+            <a href="#diagnostic-quiz" class="px-6 py-3.5 rounded-full border border-gold-subtle bg-white hover:bg-zinc-50 text-espresso text-xs sm:text-sm font-semibold tracking-wider uppercase transition-all flex items-center justify-center gap-2 shadow-sm">
+              <i class="fa-solid fa-wand-magic-sparkles text-gold"></i>
+              <span>Take 60-Sec Skin/Hair Quiz</span>
+            </a>
+          </div>
+          <div class="mt-10 pt-6 border-t border-gold-subtle w-full grid grid-cols-3 gap-4">
+            <div>
+              <div class="flex text-gold text-xs mb-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <div class="font-serif text-2xl font-bold text-espresso">4.9★</div>
+              <div class="text-[11px] text-muted">2,420+ Verified Patients</div>
+            </div>
+            <div class="border-l border-gold-subtle pl-4">
+              <div class="text-gold text-xs mb-1"><i class="fa-solid fa-user-doctor"></i></div>
+              <div class="font-serif text-2xl font-bold text-espresso">100%</div>
+              <div class="text-[11px] text-muted">Doctor-Performed</div>
+            </div>
+            <div class="border-l border-gold-subtle pl-4">
+              <div class="text-gold text-xs mb-1"><i class="fa-solid fa-award"></i></div>
+              <div class="font-serif text-2xl font-bold text-espresso">14+ Yrs</div>
+              <div class="text-[11px] text-muted">AIIMS Gold Medalist</div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-sm lg:max-w-none">
+            <div class="absolute -inset-2.5 rounded-[2.2rem] border border-gold/40 transform -rotate-1 pointer-events-none"></div>
+            <div class="relative rounded-[2rem] overflow-hidden shadow-2xl bg-white border border-gold-subtle aspect-[4/5]">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1000&q=80" alt="Aura Studio Clinical Excellence" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-espresso/60 via-transparent to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <div class="text-[9px] tracking-widest uppercase font-semibold text-gold-light">AURA CLINICAL PROTOCOL</div>
+                <div class="font-serif text-lg font-medium">Bespoke Micro-Density & Glass Complexion</div>
+              </div>
+            </div>
+            <div class="absolute -top-3 -left-4 glass-card border border-gold-subtle rounded-xl p-3 shadow-luxury animate-float max-w-[200px]">
+              <div class="flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-lg bg-gold/15 flex items-center justify-center text-gold shrink-0"><i class="fa-solid fa-microchip text-sm"></i></div>
+                <div><div class="text-xs font-bold text-espresso">US-FDA Cleared</div><div class="text-[10px] text-muted">Candela PicoWay & Morpheus8</div></div>
+              </div>
+            </div>
+            <div class="absolute -bottom-4 -right-4 glass-card border border-gold-subtle rounded-xl p-3 shadow-luxury max-w-[210px]">
+              <div class="flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-lg bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-700 shrink-0"><i class="fa-solid fa-circle-check text-sm"></i></div>
+                <div><div class="text-xs font-bold text-espresso">Sapphire FUE Master</div><div class="text-[10px] text-muted">98.6% Follicle Survival</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. SECTION B: 60-SECOND AI SKIN & HAIR DIAGNOSTIC QUIZ -->
+  <section id="diagnostic-quiz" class="py-16 sm:py-24 bg-white relative border-b border-gold-subtle">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-xl mx-auto mb-8">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/10 border border-gold/30 text-gold text-xs font-semibold tracking-wider uppercase mb-2">
+          <i class="fa-solid fa-microscope text-xs"></i><span>Algorithmic Clinical Assessment</span>
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl font-medium text-espresso">60-Second AI Diagnostic Quiz</h2>
+        <p class="mt-2 text-xs sm:text-sm text-muted">Answer 3 clinical questions to formulate your personalized medical protocol.</p>
+      </div>
+      <div class="bg-alabaster rounded-3xl border border-gold-subtle p-5 sm:p-8 shadow-luxury">
+        <div class="mb-6">
+          <div class="flex justify-between text-xs font-semibold text-charcoal mb-2">
+            <span id="quiz-step-title" class="uppercase text-gold">Step 1 of 3: Primary Concern</span>
+            <span id="quiz-percentage" class="text-muted">33% Completed</span>
+          </div>
+          <div class="w-full h-2 rounded-full bg-zinc-200 overflow-hidden">
+            <div id="quiz-progress-bar" class="h-full bg-gradient-to-r from-gold to-gold-hover transition-all duration-500 rounded-full" style="width: 33.33%;"></div>
+          </div>
+        </div>
+
+        <!-- Step 1 -->
+        <div id="quiz-step-1" class="quiz-step-view block text-left">
+          <h3 class="font-serif text-xl sm:text-2xl font-semibold text-espresso mb-1">Select your primary clinical concern:</h3>
+          <p class="text-xs text-muted mb-4">Choose the condition you want Dr. Aarav Mehta to diagnose:</p>
+          <div class="grid sm:grid-cols-2 gap-3">
+            <button type="button" onclick="selectQuizOption('concern', 'pigmentation', this)" class="quiz-option-btn p-3.5 rounded-xl bg-white border border-gold-subtle text-left flex items-start gap-3 hover:border-gold transition-all">
+              <div class="w-8 h-8 rounded-lg bg-gold/10 text-gold flex items-center justify-center shrink-0"><i class="fa-solid fa-sun"></i></div>
+              <div><div class="text-xs font-bold text-espresso">Skin Glow & Pigmentation</div><div class="text-[11px] text-muted">Melasma, dark spots, tan & dullness</div></div>
+            </button>
+            <button type="button" onclick="selectQuizOption('concern', 'acne_scars', this)" class="quiz-option-btn p-3.5 rounded-xl bg-white border border-gold-subtle text-left flex items-start gap-3 hover:border-gold transition-all">
+              <div class="w-8 h-8 rounded-lg bg-gold/10 text-gold flex items-center justify-center shrink-0"><i class="fa-solid fa-face-grimace"></i></div>
+              <div><div class="text-xs font-bold text-espresso">Active Acne & Deep Scars</div><div class="text-[11px] text-muted">Rolling, boxcar scars & breakouts</div></div>
+            </button>
+            <button type="button" onclick="selectQuizOption('concern', 'hair_fall', this)" class="quiz-option-btn p-3.5 rounded-xl bg-white border border-gold-subtle text-left flex items-start gap-3 hover:border-gold transition-all">
+              <div class="w-8 h-8 rounded-lg bg-gold/10 text-gold flex items-center justify-center shrink-0"><i class="fa-solid fa-wind"></i></div>
+              <div><div class="text-xs font-bold text-espresso">Hair Fall & Thinning (PRP/GFC)</div><div class="text-[11px] text-muted">Shedding, widened partition & thinning</div></div>
+            </button>
+            <button type="button" onclick="selectQuizOption('concern', 'transplant', this)" class="quiz-option-btn p-3.5 rounded-xl bg-white border border-gold-subtle text-left flex items-start gap-3 hover:border-gold transition-all">
+              <div class="w-8 h-8 rounded-lg bg-gold/10 text-gold flex items-center justify-center shrink-0"><i class="fa-solid fa-gem"></i></div>
+              <div><div class="text-xs font-bold text-espresso">Sapphire FUE Hair Transplant</div><div class="text-[11px] text-muted">Receding hairline & crown baldness</div></div>
+            </button>
+            <button type="button" onclick="selectQuizOption('concern', 'anti_aging', this)" class="quiz-option-btn sm:col-span-2 p-3.5 rounded-xl bg-white border border-gold-subtle text-left flex items-start gap-3 hover:border-gold transition-all">
+              <div class="w-8 h-8 rounded-lg bg-gold/10 text-gold flex items-center justify-center shrink-0"><i class="fa-solid fa-sparkles"></i></div>
+              <div><div class="text-xs font-bold text-espresso">Anti-Aging, Morpheus8 & Fillers</div><div class="text-[11px] text-muted">Wrinkles, jowl laxity, jawline sculpting</div></div>
+            </button>
+          </div>
+          <div class="mt-6 flex justify-end">
+            <button id="btn-quiz-step-1" onclick="advanceQuizStep(2)" disabled class="px-5 py-2.5 rounded-full bg-zinc-300 text-zinc-500 font-semibold text-xs uppercase tracking-wider cursor-not-allowed">Next: Duration <i class="fa-solid fa-arrow-right ml-1"></i></button>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div id="quiz-step-2" class="quiz-step-view hidden text-left">
+          <h3 class="font-serif text-xl sm:text-2xl font-semibold text-espresso mb-1">How long has this condition persisted?</h3>
+          <p class="text-xs text-muted mb-4">Chronicity guides topical vs energy-based laser protocols:</p>
+          <div class="grid sm:grid-cols-2 gap-3">
+            <button type="button" onclick="selectQuizOption('duration', 'mild', this)" class="quiz-option-btn p-3.5 rounded-xl bg-white border border-gold-subtle text-left flex items-center gap-3 hover:border-gold"><div class="w-7 h-7 rounded-lg bg-zinc-100 flex items-center justify-center font-bold text-xs">01</div><div><div class="text-xs font-bold text-espresso">Early Onset / Mild</div><div class="text-[11px] text-muted">Less than 6 months</div></div></button>
+            <button type="button" onclick="selectQuizOption('duration', 'moderate', this)" class="quiz-option-btn p-3.5 rounded-xl bg-white border border-gold-subtle text-left flex items-center gap-3 hover:border-gold"><div class="w-7 h-7 rounded-lg bg-zinc-100 flex items-center justify-center font-bold text-xs">02</div><div><div class="text-xs font-bold text-espresso">Moderate & Recurrent</div><div class="text-[11px] text-muted">Between 6 to 18 months</div></div></button>
+            <button type="button" onclick="selectQuizOption('duration', 'severe', this)" class="quiz-option-btn p-3.5 rounded-xl bg-white border border-gold-subtle text-left flex items-center gap-3 hover:border-gold"><div class="w-7 h-7 rounded-lg bg-zinc-100 flex items-center justify-center font-bold text-xs">03</div><div><div class="text-xs font-bold text-espresso">Advanced / Chronic</div><div class="text-[11px] text-muted">More than 2 years</div></div></button>
+            <button type="button" onclick="selectQuizOption('duration', 'failed_previous', this)" class="quiz-option-btn p-3.5 rounded-xl bg-white border border-gold-subtle text-left flex items-center gap-3 hover:border-gold"><div class="w-7 h-7 rounded-lg bg-zinc-100 flex items-center justify-center font-bold text-xs">04</div><div><div class="text-xs font-bold text-espresso">Failed Previous Treatment</div><div class="text-[11px] text-muted">Seeking expert medical revision</div></div></button>
+          </div>
+          <div class="mt-6 flex justify-between items-center">
+            <button type="button" onclick="advanceQuizStep(1)" class="px-4 py-2 rounded-full border border-zinc-300 text-xs font-semibold text-charcoal"><i class="fa-solid fa-arrow-left mr-1"></i> Back</button>
+            <button id="btn-quiz-step-2" onclick="advanceQuizStep(3)" disabled class="px-5 py-2.5 rounded-full bg-zinc-300 text-zinc-500 font-semibold text-xs uppercase tracking-wider cursor-not-allowed">Next: Profile <i class="fa-solid fa-arrow-right ml-1"></i></button>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div id="quiz-step-3" class="quiz-step-view hidden text-left">
+          <h3 class="font-serif text-xl sm:text-2xl font-semibold text-espresso mb-1">Age Bracket & Skin/Scalp Type:</h3>
+          <p class="text-xs text-muted mb-4">Determines cellular recovery rate and laser wavelength:</p>
+          <div class="space-y-4">
+            <div>
+              <label class="block text-[11px] font-bold uppercase tracking-wider text-charcoal mb-2">Age Bracket:</label>
+              <div class="grid grid-cols-4 gap-2">
+                <button type="button" onclick="selectQuizOption('age', '18-25', this)" class="quiz-age-btn py-2 rounded-xl bg-white border border-gold-subtle text-xs font-semibold">18 - 25</button>
+                <button type="button" onclick="selectQuizOption('age', '26-35', this)" class="quiz-age-btn py-2 rounded-xl bg-white border border-gold-subtle text-xs font-semibold">26 - 35</button>
+                <button type="button" onclick="selectQuizOption('age', '36-45', this)" class="quiz-age-btn py-2 rounded-xl bg-white border border-gold-subtle text-xs font-semibold">36 - 45</button>
+                <button type="button" onclick="selectQuizOption('age', '46+', this)" class="quiz-age-btn py-2 rounded-xl bg-white border border-gold-subtle text-xs font-semibold">46+</button>
+              </div>
+            </div>
+            <div>
+              <label class="block text-[11px] font-bold uppercase tracking-wider text-charcoal mb-2">Skin / Scalp Profile:</label>
+              <div class="grid sm:grid-cols-2 gap-2.5">
+                <button type="button" onclick="selectQuizOption('profile', 'sensitive', this)" class="quiz-profile-btn p-2.5 rounded-xl bg-white border border-gold-subtle text-left text-xs font-semibold flex items-center gap-2"><i class="fa-solid fa-droplet text-gold"></i><span>Sensitive / Reactive / Dry</span></button>
+                <button type="button" onclick="selectQuizOption('profile', 'oily_acne', this)" class="quiz-profile-btn p-2.5 rounded-xl bg-white border border-gold-subtle text-left text-xs font-semibold flex items-center gap-2"><i class="fa-solid fa-shield-virus text-gold"></i><span>Oily / Congested / Open Pores</span></button>
+                <button type="button" onclick="selectQuizOption('profile', 'combination', this)" class="quiz-profile-btn p-2.5 rounded-xl bg-white border border-gold-subtle text-left text-xs font-semibold flex items-center gap-2"><i class="fa-solid fa-layer-group text-gold"></i><span>Normal / Combination</span></button>
+                <button type="button" onclick="selectQuizOption('profile', 'thinning_scalp', this)" class="quiz-profile-btn p-2.5 rounded-xl bg-white border border-gold-subtle text-left text-xs font-semibold flex items-center gap-2"><i class="fa-solid fa-feather text-gold"></i><span>Thinning Scalp / Visible Scalp</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 flex justify-between items-center">
+            <button type="button" onclick="advanceQuizStep(2)" class="px-4 py-2 rounded-full border border-zinc-300 text-xs font-semibold text-charcoal"><i class="fa-solid fa-arrow-left mr-1"></i> Back</button>
+            <button id="btn-quiz-step-3" onclick="generateQuizResult()" disabled class="px-6 py-2.5 rounded-full bg-zinc-300 text-zinc-500 font-semibold text-xs uppercase tracking-wider cursor-not-allowed"><i class="fa-solid fa-microchip mr-1.5"></i> Generate Protocol</button>
+          </div>
+        </div>
+
+        <!-- Quiz Loading -->
+        <div id="quiz-loading" class="quiz-step-view hidden py-10 text-center">
+          <div class="w-12 h-12 rounded-full bg-gold/15 text-gold flex items-center justify-center mx-auto mb-3"><i class="fa-solid fa-spinner fa-spin text-xl"></i></div>
+          <h4 class="font-serif text-xl font-medium text-espresso">Formulating Clinical Protocol...</h4>
+          <p class="text-xs text-muted mt-1">Cross-referencing Dr. Aarav Mehta's clinical database.</p>
+        </div>
+
+        <!-- Quiz Result -->
+        <div id="quiz-result" class="quiz-step-view hidden text-left">
+          <div class="bg-white rounded-2xl border border-gold p-5 sm:p-6 shadow-sm">
+            <div class="flex flex-wrap justify-between items-center gap-2 pb-4 border-b border-gold-subtle">
+              <div>
+                <span class="px-2.5 py-0.5 rounded-full bg-sage-light text-sage-dark text-[11px] font-bold"><i class="fa-solid fa-check text-emerald-600 mr-1"></i> Protocol Generated</span>
+                <h3 id="result-protocol-title" class="font-serif text-2xl font-semibold text-espresso mt-1">Triple-Action PicoWay® Melasma Protocol</h3>
+              </div>
+              <div class="text-right">
+                <span class="text-[10px] uppercase font-bold text-muted">Clinical Match</span>
+                <div id="result-protocol-match" class="font-serif text-xl font-bold text-gold">98.4% Match</div>
+              </div>
+            </div>
+            <div class="py-4 grid sm:grid-cols-3 gap-3 border-b border-gold-subtle text-xs">
+              <div class="p-2.5 bg-alabaster rounded-lg"><div class="text-[10px] uppercase font-bold text-muted">Primary Solution</div><div id="result-primary-treatment" class="font-semibold text-espresso mt-0.5">Candela PicoWay® Resolve</div></div>
+              <div class="p-2.5 bg-alabaster rounded-lg"><div class="text-[10px] uppercase font-bold text-muted">Sessions</div><div id="result-sessions" class="font-semibold text-espresso mt-0.5">3 - 4 Sessions</div></div>
+              <div class="p-2.5 bg-alabaster rounded-lg"><div class="text-[10px] uppercase font-bold text-muted">Downtime</div><div id="result-downtime" class="font-semibold text-espresso mt-0.5">Zero Downtime</div></div>
+            </div>
+            <div class="mt-3 text-xs leading-relaxed text-muted">
+              <strong class="text-charcoal block mb-1">Doctor's Note:</strong>
+              <span id="result-notes">Cold photoacoustic energy shatters pigment without thermal rebound.</span>
+              <div class="mt-3 p-2.5 rounded-lg bg-gold/10 border border-gold/30 flex justify-between items-center">
+                <span class="font-semibold text-espresso text-xs">Transparent Pricing:</span>
+                <span id="result-estimate" class="font-serif text-base font-bold text-espresso">Starting from ₹12,000 / Session</span>
+              </div>
+            </div>
+            <div class="mt-5 pt-4 border-t border-gold-subtle flex flex-wrap gap-2.5 justify-between items-center">
+              <button onclick="bookProtocolFromQuiz()" class="px-5 py-2.5 rounded-full bg-gold hover:bg-gold-hover text-white text-xs font-semibold uppercase tracking-wider shadow"><i class="fa-regular fa-calendar-check mr-1.5"></i> Book Protocol</button>
+              <a id="btn-share-whatsapp" href="#" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-full border border-emerald-500/50 bg-emerald-50 text-emerald-800 text-xs font-semibold uppercase tracking-wider flex items-center gap-1.5"><i class="fa-brands fa-whatsapp text-emerald-600"></i> WhatsApp Report</a>
+              <button onclick="resetQuiz()" class="text-xs text-muted hover:text-espresso underline">Retake</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. SECTION C: FILTERABLE SIGNATURE TREATMENTS -->
+  <section id="treatments" class="py-16 sm:py-24 bg-alabaster relative border-b border-gold-subtle">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-gold-subtle text-gold text-xs font-semibold uppercase mb-2"><i class="fa-solid fa-gem text-xs"></i><span>Curated Clinical Services</span></div>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium text-espresso">Signature Treatments & Transparent Pricing</h2>
+          <p class="mt-2 text-xs sm:text-sm text-muted">Doctor-led aesthetic medicine with zero hidden costs.</p>
+        </div>
+        <button onclick="openBookingModal()" class="mt-3 md:mt-0 text-xs font-semibold uppercase text-espresso hover:text-gold border-b border-gold pb-0.5">Request Custom Plan <i class="fa-solid fa-arrow-right ml-1"></i></button>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-3 mb-8">
+        <button onclick="filterTreatments('all', this)" class="treatment-tab-btn active px-4 py-2 rounded-full text-xs font-semibold uppercase whitespace-nowrap bg-espresso text-white shadow-sm">All Services (8)</button>
+        <button onclick="filterTreatments('dermatology', this)" class="treatment-tab-btn px-4 py-2 rounded-full text-xs font-semibold uppercase whitespace-nowrap bg-white border border-gold-subtle text-charcoal hover:border-gold">Clinical Dermatology</button>
+        <button onclick="filterTreatments('hair', this)" class="treatment-tab-btn px-4 py-2 rounded-full text-xs font-semibold uppercase whitespace-nowrap bg-white border border-gold-subtle text-charcoal hover:border-gold">Hair Restoration & Transplant</button>
+        <button onclick="filterTreatments('laser', this)" class="treatment-tab-btn px-4 py-2 rounded-full text-xs font-semibold uppercase whitespace-nowrap bg-white border border-gold-subtle text-charcoal hover:border-gold">Laser & Medi-Facials</button>
+        <button onclick="filterTreatments('antiaging', this)" class="treatment-tab-btn px-4 py-2 rounded-full text-xs font-semibold uppercase whitespace-nowrap bg-white border border-gold-subtle text-charcoal hover:border-gold">Anti-Aging & Injectables</button>
+      </div>
+
+      <!-- Dynamic Treatments Grid -->
+      <div id="treatments-grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- 7. SECTION D: BEFORE & AFTER TRANSFORMATION SLIDER -->
+  <section id="transformations" class="py-16 sm:py-24 bg-white relative border-b border-gold-subtle">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-xl mx-auto mb-8">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/10 border border-gold/30 text-gold text-xs font-semibold uppercase mb-2"><i class="fa-solid fa-camera text-xs"></i><span>Standardized Clinical Outcomes</span></div>
+        <h2 class="font-serif text-3xl sm:text-4xl font-medium text-espresso">Real Patient Transformations</h2>
+        <p class="mt-2 text-xs sm:text-sm text-muted">Touch or drag the slider horizontally to compare untouched clinical progress.</p>
+      </div>
+      <div class="flex justify-center gap-2 mb-6 overflow-x-auto pb-2">
+        <button onclick="switchTransformationCase(1, this)" class="case-btn active px-4 py-2 rounded-full text-xs font-semibold uppercase bg-espresso text-white">Case 1: 3,500 Grafts Sapphire FUE</button>
+        <button onclick="switchTransformationCase(2, this)" class="case-btn px-4 py-2 rounded-full text-xs font-semibold uppercase bg-alabaster border border-gold-subtle text-charcoal hover:border-gold">Case 2: Grade 4 Acne Scars</button>
+        <button onclick="switchTransformationCase(3, this)" class="case-btn px-4 py-2 rounded-full text-xs font-semibold uppercase bg-alabaster border border-gold-subtle text-charcoal hover:border-gold">Case 3: Melasma & Pigmentation</button>
+      </div>
+      <div class="bg-alabaster rounded-3xl border border-gold-subtle p-4 sm:p-8 shadow-luxury">
+        <div class="grid lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7">
+            <div id="comparison-box" class="comparison-container rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-[16/10] bg-zinc-900 border border-gold-subtle shadow-md cursor-ew-resize">
+              <img id="after-image" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1000&q=80" alt="After Transformation" class="absolute inset-0 w-full h-full object-cover select-none pointer-events-none">
+              <div class="absolute top-3 right-3 z-20 px-2.5 py-0.5 rounded-full bg-espresso/80 backdrop-blur text-white text-[10px] font-bold uppercase">AFTER (8 Months)</div>
+              <div id="before-image-wrapper" class="absolute inset-0 overflow-hidden select-none" style="width: 50%;">
+                <img id="before-image" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1000&q=80" alt="Before Transformation" class="absolute top-0 left-0 max-w-none h-full object-cover select-none pointer-events-none" style="width: 100%;">
+                <div class="absolute top-3 left-3 z-20 px-2.5 py-0.5 rounded-full bg-espresso/80 backdrop-blur text-white text-[10px] font-bold uppercase">BEFORE</div>
+              </div>
+              <div id="slider-handle" class="comparison-slider-handle flex items-center justify-center" style="left: 50%;">
+                <div class="w-8 h-8 rounded-full bg-gold border-2 border-white shadow-xl flex items-center justify-center text-white text-[10px]"><i class="fa-solid fa-chevron-left mr-0.5"></i><i class="fa-solid fa-chevron-right"></i></div>
+              </div>
+            </div>
+            <div class="mt-3 flex justify-between text-xs text-muted">
+              <span><i class="fa-solid fa-arrows-left-right text-gold mr-1"></i> Drag or touch to slide</span>
+              <span id="slider-split-percent" class="font-semibold text-charcoal">50% View Split</span>
+            </div>
+          </div>
+          <div class="lg:col-span-5 text-left">
+            <span id="case-badge" class="px-2.5 py-0.5 rounded-full bg-gold/15 text-gold text-xs font-bold uppercase">Norwood Scale V Restoration</span>
+            <h3 id="case-title" class="font-serif text-2xl font-semibold text-espresso mt-2">3,500 Grafts Sapphire FUE Hair Transplant</h3>
+            <div class="flex items-center gap-2 mt-1.5 text-xs text-muted"><span id="case-patient"><i class="fa-solid fa-user-check text-emerald-600 mr-1"></i> Vikram Singhania, 34 yrs</span>•<span id="case-branch"><i class="fa-solid fa-location-dot text-gold mr-1"></i> Bandra West</span></div>
+            <p id="case-description" class="mt-3 text-xs sm:text-sm text-muted leading-relaxed">Single-hair follicular units along frontal micro-irregularities for undetectable density. 98.4% survival rate.</p>
+            <div class="mt-4 grid grid-cols-2 gap-2.5 p-3 bg-white rounded-xl border border-gold-subtle text-xs">
+              <div><div class="text-[10px] uppercase font-bold text-muted">Procedure</div><div id="case-metric-1" class="font-semibold text-espresso mt-0.5">Sapphire Micro-Motor FUE</div></div>
+              <div><div class="text-[10px] uppercase font-bold text-muted">Survival Rate</div><div id="case-metric-2" class="font-semibold text-emerald-700 mt-0.5">98.4% Documented</div></div>
+              <div class="pt-2 border-t border-zinc-100"><div class="text-[10px] uppercase font-bold text-muted">Recovery</div><div id="case-metric-3" class="font-semibold text-espresso mt-0.5">Social in 4 Days</div></div>
+              <div class="pt-2 border-t border-zinc-100"><div class="text-[10px] uppercase font-bold text-muted">Density</div><div id="case-metric-4" class="font-semibold text-espresso mt-0.5">58 Grafts / cm²</div></div>
+            </div>
+            <div class="mt-5"><button onclick="prefillAndOpenBooking('Sapphire FUE Hair Transplant')" class="px-5 py-2.5 rounded-full bg-gold hover:bg-gold-hover text-white text-xs font-semibold uppercase tracking-wider shadow">Book Hair Assessment <i class="fa-solid fa-arrow-right ml-1"></i></button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. SECTION E: CHIEF DERMATOLOGIST & FDA SUITE -->
+  <section id="doctor" class="py-16 sm:py-24 bg-alabaster relative border-b border-gold-subtle">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-sm">
+            <div class="absolute -inset-2.5 rounded-[2.2rem] border border-gold/40 transform rotate-1 pointer-events-none"></div>
+            <div class="relative rounded-[2rem] overflow-hidden shadow-2xl bg-white border border-gold-subtle aspect-[4/5]">
+              <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=1000&q=80" alt="Dr. Aarav Mehta MD" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-espresso/80 via-transparent to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <div class="text-[9px] tracking-widest uppercase font-semibold text-gold-light">CHIEF MEDICAL DIRECTOR</div>
+                <div class="font-serif text-2xl font-medium">Dr. Aarav Mehta</div>
+                <div class="text-xs text-zinc-300">MD Dermatology (AIIMS Gold Medalist) • ISHRS USA</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-7 flex flex-col items-start text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-gold-subtle text-gold text-xs font-semibold uppercase mb-3"><i class="fa-solid fa-award text-xs"></i><span>Verifiable Clinical Mastery</span></div>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium text-espresso leading-tight">"Aesthetics is not alteration; it is the mathematical refinement of your innate facial harmony."</h2>
+          <p class="mt-4 text-xs sm:text-sm text-muted leading-relaxed">With 14+ years of medical excellence, Dr. Aarav Mehta founded Aura on doctor-performed medical rigor, multispectral dermoscopy, and zero artificial look.</p>
+          <div class="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-2.5 w-full">
+            <div class="p-3 bg-white rounded-xl border border-gold-subtle text-center"><div class="text-gold text-base mb-1"><i class="fa-solid fa-medal"></i></div><div class="text-xs font-bold text-espresso">AIIMS Medalist</div><div class="text-[10px] text-muted">MD Dermatology</div></div>
+            <div class="p-3 bg-white rounded-xl border border-gold-subtle text-center"><div class="text-gold text-base mb-1"><i class="fa-solid fa-earth-americas"></i></div><div class="text-xs font-bold text-espresso">ISHRS (USA)</div><div class="text-[10px] text-muted">Active Fellow</div></div>
+            <div class="p-3 bg-white rounded-xl border border-gold-subtle text-center"><div class="text-gold text-base mb-1"><i class="fa-solid fa-stethoscope"></i></div><div class="text-xs font-bold text-espresso">14+ Years</div><div class="text-[10px] text-muted">15,000+ Cases</div></div>
+            <div class="p-3 bg-white rounded-xl border border-gold-subtle text-center"><div class="text-gold text-base mb-1"><i class="fa-solid fa-certificate"></i></div><div class="text-xs font-bold text-espresso">MCI Reg. 48291</div><div class="text-[10px] text-muted">Verified Doctor</div></div>
+          </div>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <button onclick="openBookingModal()" class="px-6 py-3 rounded-full bg-gold hover:bg-gold-hover text-white text-xs font-semibold uppercase tracking-wider shadow"><i class="fa-regular fa-calendar-check mr-1.5"></i> Consult Dr. Aarav</button>
+            <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded-full border border-gold-subtle bg-white text-charcoal text-xs font-semibold uppercase tracking-wider flex items-center gap-1.5"><i class="fa-brands fa-whatsapp text-emerald-600"></i> Direct WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- US-FDA Tech Suite -->
+      <div id="technology" class="mt-16 pt-12 border-t border-gold-subtle">
+        <div class="text-center max-w-xl mx-auto mb-8">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-gold-subtle text-gold text-xs font-semibold uppercase mb-2"><i class="fa-solid fa-microchip text-xs"></i><span>Original Gold Standard Devices</span></div>
+          <h3 class="font-serif text-2xl sm:text-3xl font-medium text-espresso">US-FDA Certified Medical Suite</h3>
+        </div>
+        <div id="tech-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. SECTION F: PATIENT STORIES & FAQ ACCORDION -->
+  <section id="testimonials" class="py-16 sm:py-24 bg-white relative border-b border-gold-subtle">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-xl mx-auto mb-10">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/10 border border-gold/30 text-gold text-xs font-semibold uppercase mb-2"><i class="fa-solid fa-star text-xs"></i><span>Verified Clinical Proof</span></div>
+        <h2 class="font-serif text-3xl sm:text-4xl font-medium text-espresso">Patient Stories & Reviews</h2>
+        <div class="mt-4 inline-flex items-center gap-4 px-4 py-2 rounded-xl bg-alabaster border border-gold-subtle text-xs">
+          <i class="fa-brands fa-google text-amber-500 text-lg"></i>
+          <span class="font-bold text-espresso text-base">4.9 / 5.0</span>
+          <div class="flex text-gold text-xs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <span class="text-muted">(2,420+ Google Reviews)</span>
+        </div>
+      </div>
+      <div id="reviews-grid" class="grid md:grid-cols-3 gap-6"></div>
+
+      <!-- FAQ Accordion -->
+      <div id="faqs" class="mt-16 pt-12 border-t border-gold-subtle max-w-3xl mx-auto text-left">
+        <h3 class="font-serif text-2xl sm:text-3xl font-medium text-espresso text-center mb-6">Frequently Asked Clinical Questions</h3>
+        <div id="faq-container" class="space-y-3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. SECTION G: CLINIC LOCATIONS & INLINE BOOKING -->
+  <section id="contact" class="py-16 sm:py-24 bg-alabaster relative border-b border-gold-subtle">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-10 items-start">
+        <div class="lg:col-span-5 text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-gold-subtle text-gold text-xs font-semibold uppercase mb-2"><i class="fa-solid fa-building-circle-check text-xs"></i><span>Sanctuaries</span></div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-medium text-espresso">Flagship Studios</h2>
+          <p class="mt-2 text-xs sm:text-sm text-muted">Quiet luxury aesthetic clinics with HEPA laminar air flow and private VIP recovery rooms.</p>
+          <div class="mt-5 p-4 bg-white rounded-xl border border-gold-subtle">
+            <div class="flex justify-between items-center mb-1"><h3 class="font-serif font-bold text-espresso text-base">Bandra West Flagship, Mumbai</h3><span class="px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 text-[10px] font-bold">Open</span></div>
+            <p class="text-xs text-muted">402, Signature One, Waterfield Road, Bandra West, Mumbai 400050.</p>
+            <div class="mt-2 text-xs font-medium"><a href="tel:+919876543210" class="text-gold mr-3"><i class="fa-solid fa-phone mr-1"></i> +91 98765 43210</a><a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="text-charcoal"><i class="fa-solid fa-location-arrow mr-1"></i> Maps</a></div>
+          </div>
+          <div class="mt-3 p-4 bg-white rounded-xl border border-gold-subtle">
+            <div class="flex justify-between items-center mb-1"><h3 class="font-serif font-bold text-espresso text-base">Indiranagar Studio, Bengaluru</h3><span class="px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 text-[10px] font-bold">Open</span></div>
+            <p class="text-xs text-muted">814, 100 Feet Road, HAL 2nd Stage, Indiranagar, Bengaluru 560038.</p>
+            <div class="mt-2 text-xs font-medium"><a href="tel:+919876543211" class="text-gold mr-3"><i class="fa-solid fa-phone mr-1"></i> +91 98765 43211</a><a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="text-charcoal"><i class="fa-solid fa-location-arrow mr-1"></i> Maps</a></div>
+          </div>
+          <div class="mt-3 p-3 rounded-lg bg-gold/10 text-xs text-charcoal flex justify-between"><span class="font-semibold"><i class="fa-regular fa-clock text-gold mr-1"></i> Hours:</span><span>Mon - Sat: 10 AM - 8 PM • Sun: By Appointment</span></div>
+        </div>
+        <div class="lg:col-span-7">
+          <div class="bg-white rounded-3xl border border-gold-subtle p-6 sm:p-8 shadow-luxury text-left">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-gold">VIP Concierge</span>
+            <h3 class="font-serif text-2xl font-semibold text-espresso mt-0.5">Schedule Private Consultation</h3>
+            <form onsubmit="handleInlineBooking(event)" class="mt-5 space-y-3.5">
+              <div class="grid sm:grid-cols-2 gap-3">
+                <div><label class="block text-[11px] font-bold uppercase text-charcoal mb-1">Full Name *</label><input type="text" id="inline-patient-name" required placeholder="e.g. Vikram Singhania" class="w-full px-3.5 py-2.5 rounded-xl bg-alabaster border border-zinc-200 text-xs sm:text-sm focus:border-gold focus:outline-none"></div>
+                <div><label class="block text-[11px] font-bold uppercase text-charcoal mb-1">Phone / WhatsApp *</label><input type="tel" id="inline-patient-phone" required placeholder="+91 98765 43210" pattern="[0-9+ -]{10,14}" class="w-full px-3.5 py-2.5 rounded-xl bg-alabaster border border-zinc-200 text-xs sm:text-sm focus:border-gold focus:outline-none"></div>
+              </div>
+              <div class="grid sm:grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-[11px] font-bold uppercase text-charcoal mb-1">Service *</label>
+                  <select id="inline-treatment-select" required class="w-full px-3.5 py-2.5 rounded-xl bg-alabaster border border-zinc-200 text-xs sm:text-sm focus:border-gold focus:outline-none">
+                    <option value="Doctor Comprehensive Consultation">Doctor Comprehensive Consultation</option>
+                    <option value="Sapphire FUE Hair Transplant">Sapphire FUE Hair Transplant</option>
+                    <option value="GFC Hair Therapy">GFC Autologous Hair Therapy</option>
+                    <option value="PicoWay Laser Melasma">PicoWay® Laser Melasma & Glow</option>
+                    <option value="Morpheus8 Fractional RF">Morpheus8® Fractional RF</option>
+                    <option value="HydraFacial MD Elite">HydraFacial MD® Elite</option>
+                    <option value="Korean Glass Skin Protocol">Korean Glass Skin Meso-Glow</option>
+                    <option value="Subcision + Erbium Scar Laser">Subcision + Erbium Scar Laser</option>
+                    <option value="Juvederm Voluma Contouring">Juvederm® Voluma Contouring</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-[11px] font-bold uppercase text-charcoal mb-1">Branch *</label>
+                  <select id="inline-branch-select" required class="w-full px-3.5 py-2.5 rounded-xl bg-alabaster border border-zinc-200 text-xs sm:text-sm focus:border-gold focus:outline-none">
+                    <option value="Bandra West, Mumbai">Bandra West, Mumbai</option>
+                    <option value="Indiranagar, Bengaluru">Indiranagar, Bengaluru</option>
+                  </select>
+                </div>
+              </div>
+              <div class="grid sm:grid-cols-2 gap-3">
+                <div><label class="block text-[11px] font-bold uppercase text-charcoal mb-1">Date *</label><input type="date" id="inline-date-select" required class="w-full px-3.5 py-2 rounded-xl bg-alabaster border border-zinc-200 text-xs sm:text-sm focus:border-gold focus:outline-none"></div>
+                <div>
+                  <label class="block text-[11px] font-bold uppercase text-charcoal mb-1">Slot *</label>
+                  <select id="inline-slot-select" required class="w-full px-3.5 py-2 rounded-xl bg-alabaster border border-zinc-200 text-xs sm:text-sm focus:border-gold focus:outline-none">
+                    <option value="Morning (10:00 AM - 01:00 PM)">Morning (10 AM - 1 PM)</option>
+                    <option value="Afternoon (02:00 PM - 05:00 PM)">Afternoon (2 PM - 5 PM)</option>
+                    <option value="Evening (05:00 PM - 08:00 PM)">Evening (5 PM - 8 PM)</option>
+                  </select>
+                </div>
+              </div>
+              <div><label class="block text-[11px] font-bold uppercase text-charcoal mb-1">Notes / Questions (Optional)</label><textarea id="inline-patient-notes" rows="2" placeholder="Tell Dr. Aarav about any previous treatments..." class="w-full px-3.5 py-2 rounded-xl bg-alabaster border border-zinc-200 text-xs sm:text-sm focus:border-gold focus:outline-none"></textarea></div>
+              <button type="submit" class="w-full py-3.5 rounded-full bg-gold hover:bg-gold-hover text-white text-xs sm:text-sm font-semibold uppercase tracking-wider shadow"><i class="fa-regular fa-calendar-check mr-1.5"></i> Confirm & Generate VIP Pass</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. FOOTER -->
+  <footer class="bg-espresso text-alabaster pt-14 pb-10 border-t border-gold/20 text-left">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-zinc-800">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-2.5 mb-3">
+            <div class="w-9 h-9 rounded-full border border-gold flex items-center justify-center bg-espresso"><span class="font-serif text-xl font-bold text-gold">A</span></div>
+            <div><div class="font-serif text-xl font-semibold tracking-wider text-white">AURA</div><div class="text-[8px] tracking-widest text-gold uppercase">Derma & Hair Studio</div></div>
+          </div>
+          <p class="text-xs text-zinc-400 max-w-sm leading-relaxed">India's foremost aesthetic and hair restoration clinic led by Dr. Aarav Mehta (MD Dermatology). Dedicated to non-negotiable medical ethics and US-FDA validated lasers.</p>
+          <div class="mt-3 text-[10px] text-zinc-500">NMC / Maharashtra Medical Council Reg: 48291-MH.</div>
+        </div>
+        <div>
+          <h4 class="text-xs font-bold tracking-widest uppercase text-gold mb-3">Procedures</h4>
+          <ul class="space-y-1.5 text-xs text-zinc-400">
+            <li><a href="#treatments" class="hover:text-gold">Sapphire FUE Transplant</a></li>
+            <li><a href="#treatments" class="hover:text-gold">GFC Autologous Hair Therapy</a></li>
+            <li><a href="#treatments" class="hover:text-gold">PicoWay® Laser Melasma</a></li>
+            <li><a href="#treatments" class="hover:text-gold">Morpheus8® Fractional RF</a></li>
+            <li><a href="#treatments" class="hover:text-gold">HydraFacial MD® Elite</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xs font-bold tracking-widest uppercase text-gold mb-3">Coordinates</h4>
+          <div class="space-y-2 text-xs text-zinc-400">
+            <div><span class="text-white block font-medium">Bandra West, Mumbai</span><a href="tel:+919876543210" class="text-gold">+91 98765 43210</a></div>
+            <div><span class="text-white block font-medium">Indiranagar, Bengaluru</span><a href="tel:+919876543211" class="text-gold">+91 98765 43211</a></div>
+            <div class="pt-1 text-emerald-400"><i class="fa-brands fa-whatsapp mr-1"></i><a href="https://wa.me/919876543210" class="hover:underline">VIP WhatsApp Desk</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-6 text-[10px] text-zinc-500 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+        <p>Medical Disclaimer: Content is informational. Actual treatments are determined via in-person 3D dermoscopy by Dr. Aarav Mehta.</p>
+        <div>© 2026 AURA DERMA & HAIR STUDIO. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 12. GLASSMORPHIC BOOKING MODAL -->
+  <div id="booking-modal-backdrop" onclick="closeBookingModalOnBackdrop(event)" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300 flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl border border-gold-subtle shadow-modal w-full max-w-lg max-h-[92vh] overflow-y-auto relative text-left">
+      <button onclick="closeBookingModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-alabaster border border-zinc-200 flex items-center justify-center text-charcoal hover:text-gold z-20"><i class="fa-solid fa-xmark text-sm"></i></button>
+
+      <!-- View 1: Form -->
+      <div id="modal-form-view" class="p-5 sm:p-7">
+        <div class="pr-8 mb-4">
+          <span class="px-2 py-0.5 rounded-full bg-gold/15 text-gold text-[10px] font-bold uppercase"><i class="fa-solid fa-calendar-check mr-1"></i> Private Appointment</span>
+          <h3 class="font-serif text-2xl font-semibold text-espresso mt-1">Consult Dr. Aarav Mehta</h3>
+          <p class="text-xs text-muted">Complete the form to request your consultation at our Mumbai or Bengaluru studio.</p>
+        </div>
+        <form onsubmit="handleModalBooking(event)" class="space-y-3">
+          <div class="grid sm:grid-cols-2 gap-3">
+            <div><label class="block text-[10px] font-bold uppercase text-charcoal mb-1">Full Name *</label><input type="text" id="modal-patient-name" required placeholder="e.g. Vikram Singhania" class="w-full px-3 py-2 rounded-xl bg-alabaster border border-zinc-200 text-xs sm:text-sm focus:border-gold focus:outline-none"></div>
+            <div><label class="block text-[10px] font-bold uppercase text-charcoal mb-1">Phone / WhatsApp *</label><input type="tel" id="modal-patient-phone" required placeholder="+91 98765 43210" pattern="[0-9+ -]{10,14}" class="w-full px-3 py-2 rounded-xl bg-alabaster border border-zinc-200 text-xs sm:text-sm focus:border-gold focus:outline-none"></div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-[10px] font-bold uppercase text-charcoal mb-1">Treatment *</label>
+              <select id="modal-treatment-select" required class="w-full px-3 py-2 rounded-xl bg-alabaster border border-zinc-200 text-xs sm:text-sm focus:border-gold focus:outline-none">
+                <option value="Doctor Comprehensive Consultation">Doctor Comprehensive Consultation</option>
+                <option value="Sapphire FUE Hair Transplant">Sapphire FUE Hair Transplant</option>
+                <option value="GFC Hair Therapy">GFC Autologous Hair Therapy</option>
+                <option value="PicoWay Laser Melasma">PicoWay® Laser Melasma & Glow</option>
+                <option value="Morpheus8 Fractional RF">Morpheus8® Fractional RF</option>
+                <option value="HydraFacial MD Elite">HydraFacial MD® Elite 7-Step</option>
+                <option value="Korean Glass Skin Protocol">Korean Glass Skin Meso-Glow</option>
+                <option value="Subcision + Erbium Scar Laser">Subcision + Erbium Scar Laser</option>
+                <option value="Juvederm Voluma Contouring">Juvederm® Voluma & Lift</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-[10px] font-bold uppercase text-charcoal mb-1">Branch *</label>
+              <select id="modal-branch-select" required class="w-full px-3 py-2 rounded-xl bg-alabaster border border-zinc-200 text-xs sm:text-sm focus:border-gold focus:outline-none">
+                <option value="Bandra West, Mumbai">Bandra West, Mumbai</option>
+                <option value="Indiranagar, Bengaluru">Indiranagar, Bengaluru</option>
+              </select>
+            </div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-3">
+            <div><label class="block text-[10px] font-bold uppercase text-charcoal mb-1">Date *</label><input type="date" id="modal-date-select" required class="w-full px-3 py-2 rounded-xl bg-alabaster border border-zinc-200 text-xs sm:text-sm focus:border-gold focus:outline-none"></div>
+            <div>
+              <label class="block text-[10px] font-bold uppercase text-charcoal mb-1">Time Slot *</label>
+              <select id="modal-slot-select" required class="w-full px-3 py-2 rounded-xl bg-alabaster border border-zinc-200 text-xs sm:text-sm focus:border-gold focus:outline-none">
+                <option value="Morning (10:00 AM - 01:00 PM)">Morning (10 AM - 1 PM)</option>
+                <option value="Afternoon (02:00 PM - 05:00 PM)">Afternoon (2 PM - 5 PM)</option>
+                <option value="Evening (05:00 PM - 08:00 PM)">Evening (5 PM - 8 PM)</option>
+              </select>
+            </div>
+          </div>
+          <div><label class="block text-[10px] font-bold uppercase text-charcoal mb-1">Notes (Optional)</label><textarea id="modal-patient-notes" rows="2" placeholder="Clinical concerns or questions..." class="w-full px-3 py-1.5 rounded-xl bg-alabaster border border-zinc-200 text-xs sm:text-sm focus:border-gold focus:outline-none"></textarea></div>
+          <button type="submit" class="w-full py-3 rounded-full bg-gold hover:bg-gold-hover text-white text-xs sm:text-sm font-semibold uppercase tracking-wider shadow">Confirm VIP Consultation Request</button>
+        </form>
+      </div>
+
+      <!-- View 2: Confirmation -->
+      <div id="modal-confirmation-view" class="p-6 sm:p-8 hidden text-center">
+        <div class="w-14 h-14 rounded-full bg-emerald-100 border border-emerald-300 text-emerald-700 flex items-center justify-center mx-auto mb-3 text-xl"><i class="fa-solid fa-check"></i></div>
+        <span class="px-2.5 py-0.5 rounded-full bg-gold/15 text-gold text-[10px] font-bold uppercase">Booking Request Logged</span>
+        <h3 class="font-serif text-2xl font-semibold text-espresso mt-1">VIP Request Confirmed!</h3>
+        <div class="mt-3 p-3.5 rounded-xl bg-alabaster border border-gold-subtle text-left text-xs space-y-1.5">
+          <div class="flex justify-between pb-1.5 border-b border-zinc-200"><span class="text-muted font-bold">Booking ID:</span><span id="confirm-id" class="font-mono font-bold text-gold">AURA-2026-8942</span></div>
+          <div class="flex justify-between"><span class="text-muted">Patient:</span><span id="confirm-name" class="font-semibold text-charcoal">Vikram Singhania</span></div>
+          <div class="flex justify-between"><span class="text-muted">Treatment:</span><span id="confirm-treatment" class="font-semibold text-charcoal">Sapphire FUE</span></div>
+          <div class="flex justify-between"><span class="text-muted">Branch:</span><span id="confirm-branch" class="font-semibold text-charcoal">Bandra West</span></div>
+          <div class="flex justify-between"><span class="text-muted">Schedule:</span><span id="confirm-schedule" class="font-semibold text-charcoal">Date (Slot)</span></div>
+        </div>
+        <div class="mt-5 space-y-2">
+          <a id="confirm-whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold uppercase tracking-wider flex items-center justify-center gap-2"><i class="fa-brands fa-whatsapp text-base"></i> Confirm on WhatsApp (VIP Desk)</a>
+          <button onclick="closeBookingModal()" class="w-full py-2 rounded-full border border-zinc-200 text-charcoal text-xs font-semibold uppercase">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast-container" class="fixed top-5 right-5 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-24 right-4 md:bottom-6 md:right-6 z-30 w-10 h-10 rounded-full bg-white border border-gold-subtle shadow-luxury text-charcoal hover:text-gold flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300" aria-label="Back to top"><i class="fa-solid fa-arrow-up text-xs"></i></button>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Treatments Catalog Data
+    const treatmentsData = [
+      { id: 'hydrafacial', name: 'HydraFacial MD® Elite', cat: 'laser', tag: 'Zero Downtime', time: '45 Mins', res: 'Immediate', price: '₹7,500', desc: 'Patented 4-in-1 Vortex Technology: cleansing, extraction, and hydration.', img: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=700&q=80' },
+      { id: 'picoway', name: 'PicoWay® Laser Melasma', cat: 'dermatology', tag: 'FDA Gold Standard', time: '30 Mins', res: '2-3 Weeks', price: '₹12,000', desc: 'Sub-nanosecond acoustic pulses shattering stubborn pigment without heat damage.', img: 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=700&q=80' },
+      { id: 'sapphire_fue', name: 'Sapphire FUE Hair Transplant', cat: 'hair', tag: 'Lifetime Growth', time: '6-8 Hours', res: '4-8 Months', price: '₹65,000', desc: 'Microscopic gemstone incisions for natural density and undetectable hairline.', img: 'https://images.unsplash.com/photo-1618077360395-f3068be8e001?auto=format&fit=crop&w=700&q=80' },
+      { id: 'gfc', name: 'GFC Autologous Hair Therapy', cat: 'hair', tag: '3x Potency of PRP', time: '60 Mins', res: '6-8 Weeks', price: '₹9,500', desc: 'Pure growth factors extracted from platelets to halt shedding and awaken follicles.', img: 'https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=700&q=80' },
+      { id: 'morpheus8', name: 'Morpheus8® Fractional RF', cat: 'antiaging', tag: 'Celebrity Favorite', time: '60 Mins', res: '3-4 Weeks', price: '₹22,000', desc: 'Deep subdermal fractional RF to lift jowls, tighten neck, and smooth deep scars.', img: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&q=80' },
+      { id: 'glass_skin', name: 'Korean Glass Skin Meso-Glow', cat: 'laser', tag: 'Signature Blend', time: '50 Mins', res: '48 Hours', price: '₹11,500', desc: 'Micro-infusion of Salmon DNA (PDRN), peptides, and skin-booster hyaluronic acid.', img: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=700&q=80' },
+      { id: 'subcision', name: 'Subcision + Erbium Scar Laser', cat: 'dermatology', tag: 'Scar Eradication', time: '75 Mins', res: '4-6 Weeks', price: '₹16,500', desc: 'Surgical release of bound fibrotic scar tethers followed by collagen laser.', img: 'https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?auto=format&fit=crop&w=700&q=80' },
+      { id: 'juvederm', name: 'Juvederm® Voluma & Contouring', cat: 'antiaging', tag: 'Natural Architecture', time: '45 Mins', res: 'Immediate', price: '₹28,000', desc: 'Micro-droplet anatomical sculpting for defined jawline angles and volume lift.', img: 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=700&q=80' }
+    ];
+
+    // FDA Technology Data
+    const techData = [
+      { num: '01', title: 'Candela PicoWay® (USA)', desc: '450 picosecond acoustic pulse shattering pigment without thermal trauma.', target: 'Melasma, Tattoos, Dark Spots' },
+      { num: '02', title: 'InMode Morpheus8® (USA)', desc: '4,000-micron fractional RF remodeling subdermal adipose tissue.', target: 'Boxcar Scars, Jowl Lifting' },
+      { num: '03', title: 'Alma Soprano Titanium (Israel)', desc: 'Triple-wavelength diode laser with ICE-Plus contact cooling.', target: 'Painless Laser Hair Reduction' },
+      { num: '04', title: 'HydraFacial MD® Elite (USA)', desc: 'Vortex-fusion medical vacuum delivering salicylic and peptide boosters.', target: 'Pore Congestion & Instant Glow' },
+      { num: '05', title: 'Sapphire Micro-Motor FUE (Germany)', desc: '0.7mm gemstone blades preserving graft viability with zero linear scar.', target: 'Dense Undetectable Hairline' },
+      { num: '06', title: 'VISIA® 7th Gen Diagnostic (USA)', desc: 'Cross-polarized UV and subcutaneous dermal topographic mapping.', target: 'Standardized Dermoscopy' }
+    ];
+
+    // Reviews Data
+    const reviewsData = [
+      { name: 'Rahul Kapoor', proc: '3,200 Grafts Sapphire FUE • Mumbai', text: '"At 31, my hairline was receding. Dr. Aarav personally planned every angle. 8 months in, nobody can tell I had a transplant. Zero visible scars."', img: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=150&q=80' },
+      { name: 'Dr. Meera Sen (Radiologist)', proc: 'PicoWay & Morpheus8 • Bengaluru', text: '"As a doctor myself, I am very picky. Dr. Aarav\'s anatomical mastery is unmatched. His protocol cleared my 6-year stubborn melasma without rebound."', img: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=150&q=80' },
+      { name: 'Pooja Verma', proc: 'Subcision + Laser • Mumbai', text: '"Had spent thousands on spas with zero results for acne scars. Aura\'s subcision leveled out my deep scars in 3 sessions. Transparent pricing and genuine care."', img: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80' }
+    ];
+
+    // FAQs Data
+    const faqsData = [
+      { q: 'How soon can I return to work after Sapphire FUE Hair Transplant?', a: 'Most patients resume desk work within 48 to 72 hours. Micro-crusts shed completely within 7 to 10 days. We provide a discreet recovery kit.' },
+      { q: 'Is Morpheus8 RF or PicoWay Laser painful?', a: 'We apply our medical-grade topical anesthetic for 45 minutes, making treatments virtually pain-free. PicoWay feels like a gentle snapping sensation.' },
+      { q: 'Do you offer 0% Interest EMI payment options?', a: 'Yes. We provide 3, 6, 9, and 12-month zero-cost EMI plans on hair transplants and treatment series with instant paperless clinic approval.' },
+      { q: 'What makes Aura GFC different from standard PRP?', a: 'Standard PRP has inflammatory red/white cells. Aura GFC delivers 3x concentrated pure growth factors with zero pain and superior clinical efficacy.' },
+      { q: 'Is the consultation fee deductible from treatments?', a: 'Yes. The ₹1,500 consultation fee (including 3D VISIA™ dermoscopy analysis) is 100% credited toward your treatment package.' },
+      { q: 'Are your treatments safe for melanin-rich Indian skin (Fitzpatrick IV-VI)?', a: 'Yes. Our PicoWay acoustic laser and Soprano Titanium are specifically calibrated to avoid heat-induced post-inflammatory hyperpigmentation.' }
+    ];
+
+    // Transformations Data
+    const transformationCases = {
+      1: { badge: 'Norwood Scale V Restoration', title: '3,500 Grafts Sapphire FUE Hair Transplant', patient: 'Vikram Singhania, 34 yrs', branch: 'Bandra West', desc: 'Single-hair follicular units along frontal micro-irregularities for natural transition. 98.4% survival rate.', m1: 'Sapphire Micro-Motor FUE', m2: '98.4% Documented', m3: 'Social in 4 Days', m4: '58 Grafts / cm²', beforeImg: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1000&q=80', afterImg: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1000&q=80', treatment: 'Sapphire FUE Hair Transplant' },
+      2: { badge: 'Grade 4 Acne Scars Remodeled', title: 'Subcision + Morpheus8® Fractional RF', patient: 'Tanya Rawat, 27 yrs', branch: 'Indiranagar', desc: 'Taylor-style subcision combined with 4mm RF energy achieving 82% scar depth reduction in 4 sessions.', m1: 'Subcision + Fractional RF', m2: '82% Depth Reduction', m3: 'Mild Erythema 48h', m4: '4 Total Sessions', beforeImg: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80', afterImg: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1000&q=80', treatment: 'Subcision + Erbium Scar Laser' },
+      3: { badge: 'Dermal Melasma Eradication', title: 'Candela PicoWay® + Medical Depigmentation', patient: 'Ananya Mukherjee, 39 yrs', branch: 'Bandra West', desc: 'Cold photoacoustic 1064nm laser combined with glutathione micro-infusion over 6 weeks with zero rebound.', m1: 'PicoWay 450ps Acoustic', m2: '89% Pigment Cleared', m3: 'Zero Downtime', m4: '3 Total Sessions', beforeImg: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=1000&q=80', afterImg: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1000&q=80', treatment: 'PicoWay Laser Melasma' }
+    };
+
+    // Render Treatments
+    function renderTreatments() {
+      const container = document.getElementById('treatments-grid');
+      container.innerHTML = treatmentsData.map(t => `
+        <div class="treatment-card bg-white rounded-2xl border border-gold-subtle overflow-hidden shadow-sm hover:shadow-luxury-hover hover:border-gold transition-all duration-300 flex flex-col justify-between group" data-category="${t.cat}">
+          <div>
+            <div class="relative h-44 overflow-hidden bg-zinc-100">
+              <img src="${t.img}" alt="${t.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-white/90 backdrop-blur text-[10px] font-bold text-charcoal border border-zinc-200">${t.tag}</span>
+              <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-espresso/80 text-white text-[10px]">${t.time}</span>
+            </div>
+            <div class="p-4">
+              <h3 class="font-serif text-lg font-semibold text-espresso">${t.name}</h3>
+              <p class="text-xs text-muted mt-1 leading-relaxed">${t.desc}</p>
+              <div class="mt-3 pt-2 border-t border-zinc-100 text-[11px] text-muted flex justify-between">
+                <span><strong>Results:</strong> ${t.res}</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 pt-0">
+            <div class="flex justify-between items-baseline mb-2.5">
+              <span class="text-[11px] text-muted">Starting at</span>
+              <span class="font-serif text-lg font-bold text-espresso">${t.price}</span>
+            </div>
+            <button onclick="prefillAndOpenBooking('${t.name}')" class="w-full py-2 rounded-xl border border-gold-subtle bg-alabaster hover:bg-gold hover:text-white text-xs font-semibold uppercase tracking-wider transition-all">Book Treatment</button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // Render Tech Suite
+    function renderTech() {
+      document.getElementById('tech-grid').innerHTML = techData.map(t => `
+        <div class="p-4 bg-white rounded-xl border border-gold-subtle text-left">
+          <div class="flex justify-between items-center mb-2"><span class="w-7 h-7 rounded-lg bg-gold/10 text-gold flex items-center justify-center font-bold text-xs">${t.num}</span><span class="text-[9px] font-bold uppercase px-2 py-0.5 rounded bg-emerald-50 text-emerald-700">US-FDA Cleared</span></div>
+          <h4 class="font-serif text-base font-semibold text-espresso">${t.title}</h4>
+          <p class="text-xs text-muted mt-1">${t.desc}</p>
+          <div class="mt-2 pt-2 border-t border-zinc-100 text-[10px] text-charcoal font-medium">Target: ${t.target}</div>
+        </div>
+      `).join('');
+    }
+
+    // Render Reviews
+    function renderReviews() {
+      document.getElementById('reviews-grid').innerHTML = reviewsData.map(r => `
+        <div class="p-5 bg-alabaster rounded-2xl border border-gold-subtle flex flex-col justify-between text-left">
+          <div>
+            <div class="flex text-gold text-xs mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="text-xs text-charcoal leading-relaxed italic">${r.text}</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-gold-subtle flex items-center gap-2.5">
+            <img src="${r.img}" alt="${r.name}" class="w-9 h-9 rounded-full object-cover">
+            <div><div class="text-xs font-bold text-espresso">${r.name}</div><div class="text-[10px] text-muted">${r.proc}</div></div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // Render FAQs
+    function renderFaqs() {
+      document.getElementById('faq-container').innerHTML = faqsData.map((f, i) => `
+        <div class="faq-item bg-alabaster rounded-xl border border-gold-subtle overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full p-4 text-left flex justify-between items-center gap-3">
+            <span class="font-serif text-base font-medium text-espresso">${f.q}</span>
+            <span class="faq-icon w-6 h-6 rounded-full bg-white border border-gold-subtle flex items-center justify-center text-charcoal shrink-0"><i class="fa-solid fa-plus text-[10px]"></i></span>
+          </button>
+          <div class="faq-content hidden px-4 pb-4 text-xs text-muted leading-relaxed border-t border-zinc-100">${f.a}</div>
+        </div>
+      `).join('');
+    }
+
+    // Initialization
+    document.addEventListener('DOMContentLoaded', () => {
+      const todayStr = new Date().toISOString().split('T')[0];
+      const inlineDate = document.getElementById('inline-date-select');
+      const modalDate = document.getElementById('modal-date-select');
+      if (inlineDate) { inlineDate.min = todayStr; inlineDate.value = todayStr; }
+      if (modalDate) { modalDate.min = todayStr; modalDate.value = todayStr; }
+
+      renderTreatments();
+      renderTech();
+      renderReviews();
+      renderFaqs();
+      initComparisonSlider();
+    });
+
+    // Scroll Header & Back-to-Top
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('main-header');
+      const btt = document.getElementById('back-to-top');
+      if (window.scrollY > 80) {
+        header.classList.add('shadow-md');
+        btt.classList.remove('opacity-0', 'pointer-events-none');
+        btt.classList.add('opacity-100', 'pointer-events-auto');
+      } else {
+        header.classList.remove('shadow-md');
+        btt.classList.add('opacity-0', 'pointer-events-none');
+        btt.classList.remove('opacity-100', 'pointer-events-auto');
+      }
+    });
+
+    // Mobile Drawer
+    function toggleMobileMenu() {
+      const drawer = document.getElementById('mobile-drawer');
+      const backdrop = document.getElementById('mobile-drawer-backdrop');
+      const icon = document.getElementById('hamburger-icon');
+      const isOpen = !drawer.classList.contains('translate-x-full');
+      if (isOpen) {
+        drawer.classList.add('translate-x-full');
+        backdrop.classList.add('opacity-0', 'pointer-events-none');
+        backdrop.classList.remove('opacity-100', 'pointer-events-auto');
+        icon.className = 'fa-solid fa-bars text-xl';
+        document.body.style.overflow = '';
+      } else {
+        drawer.classList.remove('translate-x-full');
+        backdrop.classList.remove('opacity-0', 'pointer-events-none');
+        backdrop.classList.add('opacity-100', 'pointer-events-auto');
+        icon.className = 'fa-solid fa-xmark text-xl';
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    // Filter Treatments
+    function filterTreatments(cat, btn) {
+      document.querySelectorAll('.treatment-tab-btn').forEach(b => {
+        b.classList.remove('active', 'bg-espresso', 'text-white');
+        b.classList.add('bg-white', 'text-charcoal', 'border', 'border-gold-subtle');
+      });
+      btn.classList.add('active', 'bg-espresso', 'text-white');
+      btn.classList.remove('bg-white', 'text-charcoal', 'border', 'border-gold-subtle');
+
+      document.querySelectorAll('.treatment-card').forEach(card => {
+        if (cat === 'all' || card.getAttribute('data-category') === cat) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // 60-Sec AI Quiz Engine
+    const quizState = { concern: null, duration: null, age: null, profile: null };
+    const protocols = {
+      pigmentation: { title: "Candela PicoWay® Resolve + Glutathione Protocol", match: "98.7% Match", primary: "PicoWay 450ps Acoustic Laser", sessions: "3 - 5 Sessions (21 days apart)", downtime: "Zero Downtime", estimate: "Starting from ₹12,000 / Session", notes: "Acoustic breakdown of deep dermal melanosomes with antioxidant tyrosinase suppression.", treatmentName: "PicoWay Laser Melasma" },
+      acne_scars: { title: "Subcision + Morpheus8® Deep Fibrotic Remodeling", match: "97.4% Match", primary: "Taylor Subcision + 4mm Fractional RF", sessions: "3 - 4 Sessions (4 weeks apart)", downtime: "Mild Pinkness 48h", estimate: "Starting from ₹16,500 / Session", notes: "Surgical release of bound-down acne tethers followed by RF neocollagenesis.", treatmentName: "Subcision + Erbium Scar Laser" },
+      hair_fall: { title: "Autologous GFC + Low-Level Laser Phototherapy", match: "99.1% Match", primary: "3x Activated Autologous Growth Factors", sessions: "4 - 6 Sessions (Monthly)", downtime: "Zero Downtime", estimate: "Starting from ₹9,500 / Session", notes: "Isolates pure PDGF and VEGF to reverse follicular miniaturization.", treatmentName: "GFC Hair Therapy" },
+      transplant: { title: "Sapphire FUE High-Density Micro-Graft Protocol", match: "98.9% Match", primary: "0.7mm Sapphire Blade Micro-Incisions", sessions: "Single Mega-Session + 3 GFC Follow-ups", downtime: "Normal routine in 72h", estimate: "Starting from ₹65,000", notes: "Single-hair follicular units along frontal micro-irregularities. 98.4% survival rate.", treatmentName: "Sapphire FUE Hair Transplant" },
+      anti_aging: { title: "InMode Morpheus8® RF + Dermal Contouring Lift", match: "96.8% Match", primary: "Subdermal Adipose Remodeling + Juvederm", sessions: "2 - 3 Sessions", downtime: "24h Mild Redness", estimate: "Starting from ₹22,000 / Session", notes: "Dual-depth RF tightening SMAS layer paired with anatomical hyaluronic lift.", treatmentName: "Morpheus8 Fractional RF" }
+    };
+    let currentGeneratedProtocol = null;
+
+    function selectQuizOption(field, val, btn) {
+      quizState[field] = val;
+      if (field === 'concern') {
+        document.querySelectorAll('#quiz-step-1 .quiz-option-btn').forEach(b => b.classList.remove('border-gold', 'bg-gold/10'));
+        btn.classList.add('border-gold', 'bg-gold/10');
+        const next = document.getElementById('btn-quiz-step-1');
+        next.disabled = false;
+        next.className = 'px-5 py-2.5 rounded-full bg-gold text-white font-semibold text-xs uppercase tracking-wider shadow';
+      } else if (field === 'duration') {
+        document.querySelectorAll('#quiz-step-2 .quiz-option-btn').forEach(b => b.classList.remove('border-gold', 'bg-gold/10'));
+        btn.classList.add('border-gold', 'bg-gold/10');
+        const next = document.getElementById('btn-quiz-step-2');
+        next.disabled = false;
+        next.className = 'px-5 py-2.5 rounded-full bg-gold text-white font-semibold text-xs uppercase tracking-wider shadow';
+      } else if (field === 'age') {
+        document.querySelectorAll('.quiz-age-btn').forEach(b => { b.classList.remove('bg-gold', 'text-white'); b.classList.add('bg-white'); });
+        btn.classList.add('bg-gold', 'text-white');
+        btn.classList.remove('bg-white');
+        checkStep3();
+      } else if (field === 'profile') {
+        document.querySelectorAll('.quiz-profile-btn').forEach(b => b.classList.remove('border-gold', 'bg-gold/10'));
+        btn.classList.add('border-gold', 'bg-gold/10');
+        checkStep3();
+      }
+    }
+
+    function checkStep3() {
+      if (quizState.age && quizState.profile) {
+        const btn = document.getElementById('btn-quiz-step-3');
+        btn.disabled = false;
+        btn.className = 'px-6 py-2.5 rounded-full bg-gold text-white font-semibold text-xs uppercase tracking-wider shadow';
+      }
+    }
+
+    function advanceQuizStep(n) {
+      document.querySelectorAll('.quiz-step-view').forEach(el => el.classList.add('hidden'));
+      const title = document.getElementById('quiz-step-title');
+      const bar = document.getElementById('quiz-progress-bar');
+      const pct = document.getElementById('quiz-percentage');
+      if (n === 1) {
+        document.getElementById('quiz-step-1').classList.remove('hidden');
+        title.textContent = 'Step 1 of 3: Primary Concern';
+        bar.style.width = '33.33%';
+        pct.textContent = '33% Completed';
+      } else if (n === 2) {
+        document.getElementById('quiz-step-2').classList.remove('hidden');
+        title.textContent = 'Step 2 of 3: Duration';
+        bar.style.width = '66.66%';
+        pct.textContent = '66% Completed';
+      } else if (n === 3) {
+        document.getElementById('quiz-step-3').classList.remove('hidden');
+        title.textContent = 'Step 3 of 3: Profile';
+        bar.style.width = '90%';
+        pct.textContent = '90% Completed';
+      }
+    }
+
+    function generateQuizResult() {
+      document.querySelectorAll('.quiz-step-view').forEach(el => el.classList.add('hidden'));
+      document.getElementById('quiz-loading').classList.remove('hidden');
+      setTimeout(() => {
+        document.getElementById('quiz-loading').classList.add('hidden');
+        document.getElementById('quiz-result').classList.remove('hidden');
+        document.getElementById('quiz-step-title').textContent = 'Protocol Formulated';
+        document.getElementById('quiz-progress-bar').style.width = '100%';
+        document.getElementById('quiz-percentage').textContent = '100% Completed';
+
+        const c = quizState.concern || 'pigmentation';
+        currentGeneratedProtocol = protocols[c] || protocols.pigmentation;
+        document.getElementById('result-protocol-title').textContent = currentGeneratedProtocol.title;
+        document.getElementById('result-protocol-match').textContent = currentGeneratedProtocol.match;
+        document.getElementById('result-primary-treatment').textContent = currentGeneratedProtocol.primary;
+        document.getElementById('result-sessions').textContent = currentGeneratedProtocol.sessions;
+        document.getElementById('result-downtime').textContent = currentGeneratedProtocol.downtime;
+        document.getElementById('result-notes').textContent = currentGeneratedProtocol.notes;
+        document.getElementById('result-estimate').textContent = currentGeneratedProtocol.estimate;
+
+        const text = encodeURIComponent(`Hello Dr. Aarav Mehta (AURA Studio),\nI took your 60-Sec AI Quiz:\n• Concern: ${c}\n• Protocol: ${currentGeneratedProtocol.title}\n• Estimate: ${currentGeneratedProtocol.estimate}\nI want to schedule my clinical appointment.`);
+        document.getElementById('btn-share-whatsapp').href = `https://wa.me/919876543210?text=${text}`;
+        showToast("Clinical protocol formulated successfully!", "success");
+      }, 1000);
+    }
+
+    function bookProtocolFromQuiz() {
+      if (currentGeneratedProtocol) {
+        openBookingModal(currentGeneratedProtocol.treatmentName, `Diagnosed via AI Quiz: ${currentGeneratedProtocol.title}`);
+      } else {
+        openBookingModal();
+      }
+    }
+
+    function resetQuiz() {
+      quizState.concern = null; quizState.duration = null; quizState.age = null; quizState.profile = null;
+      document.querySelectorAll('.quiz-option-btn, .quiz-profile-btn').forEach(b => b.classList.remove('border-gold', 'bg-gold/10'));
+      document.querySelectorAll('.quiz-age-btn').forEach(b => { b.classList.remove('bg-gold', 'text-white'); b.classList.add('bg-white'); });
+      advanceQuizStep(1);
+    }
+
+    // Transformations Slider
+    function switchTransformationCase(n, btn) {
+      document.querySelectorAll('.case-btn').forEach(b => {
+        b.classList.remove('active', 'bg-espresso', 'text-white');
+        b.classList.add('bg-alabaster', 'text-charcoal', 'border', 'border-gold-subtle');
+      });
+      btn.classList.add('active', 'bg-espresso', 'text-white');
+      btn.classList.remove('bg-alabaster', 'text-charcoal', 'border', 'border-gold-subtle');
+
+      const d = transformationCases[n];
+      if (!d) return;
+      document.getElementById('case-badge').textContent = d.badge;
+      document.getElementById('case-title').textContent = d.title;
+      document.getElementById('case-patient').innerHTML = `<i class="fa-solid fa-user-check text-emerald-600 mr-1"></i> ${d.patient}`;
+      document.getElementById('case-branch').innerHTML = `<i class="fa-solid fa-location-dot text-gold mr-1"></i> ${d.branch}`;
+      document.getElementById('case-description').textContent = d.desc;
+      document.getElementById('case-metric-1').textContent = d.m1;
+      document.getElementById('case-metric-2').textContent = d.m2;
+      document.getElementById('case-metric-3').textContent = d.m3;
+      document.getElementById('case-metric-4').textContent = d.m4;
+      document.getElementById('before-image').src = d.beforeImg;
+      document.getElementById('after-image').src = d.afterImg;
+      setSliderPosition(50);
+    }
+
+    function initComparisonSlider() {
+      const box = document.getElementById('comparison-box');
+      if (!box) return;
+      let isDragging = false;
+      function update(clientX) {
+        const r = box.getBoundingClientRect();
+        let off = clientX - r.left;
+        if (off < 0) off = 0;
+        if (off > r.width) off = r.width;
+        setSliderPosition((off / r.width) * 100);
+      }
+      box.addEventListener('mousedown', (e) => { isDragging = true; update(e.clientX); });
+      window.addEventListener('mousemove', (e) => { if (isDragging) update(e.clientX); });
+      window.addEventListener('mouseup', () => { isDragging = false; });
+      box.addEventListener('touchstart', (e) => { isDragging = true; if (e.touches && e.touches[0]) update(e.touches[0].clientX); }, { passive: true });
+      window.addEventListener('touchmove', (e) => { if (isDragging && e.touches && e.touches[0]) update(e.touches[0].clientX); }, { passive: true });
+      window.addEventListener('touchend', () => { isDragging = false; });
+    }
+
+    function setSliderPosition(pct) {
+      const p = Math.max(0, Math.min(100, pct));
+      const w = document.getElementById('before-image-wrapper');
+      const h = document.getElementById('slider-handle');
+      const lbl = document.getElementById('slider-split-percent');
+      if (w && h) {
+        w.style.width = p + '%';
+        h.style.left = p + '%';
+        if (lbl) lbl.textContent = `${Math.round(p)}% View Split`;
+      }
+    }
+
+    // FAQ Toggle
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      const content = item.querySelector('.faq-content');
+      const icon = item.querySelector('.faq-icon i');
+      const isHidden = content.classList.contains('hidden');
+      document.querySelectorAll('.faq-item').forEach(el => {
+        el.querySelector('.faq-content').classList.add('hidden');
+        el.querySelector('.faq-icon i').className = 'fa-solid fa-plus text-[10px]';
+        el.classList.remove('border-gold', 'bg-white');
+        el.classList.add('bg-alabaster');
+      });
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.className = 'fa-solid fa-minus text-[10px]';
+        item.classList.add('border-gold', 'bg-white');
+        item.classList.remove('bg-alabaster');
+      }
+    }
+
+    // Modal Booking
+    function openBookingModal(treatment = '', notes = '') {
+      const backdrop = document.getElementById('booking-modal-backdrop');
+      document.getElementById('modal-form-view').classList.remove('hidden');
+      document.getElementById('modal-confirmation-view').classList.add('hidden');
+      if (treatment) {
+        const sel = document.getElementById('modal-treatment-select');
+        let found = false;
+        for (let i = 0; i < sel.options.length; i++) {
+          if (sel.options[i].value.toLowerCase().includes(treatment.toLowerCase())) {
+            sel.selectedIndex = i;
+            found = true;
+            break;
+          }
+        }
+        if (!found) sel.add(new Option(treatment, treatment, true, true));
+      }
+      if (notes) document.getElementById('modal-patient-notes').value = notes;
+      backdrop.classList.remove('opacity-0', 'pointer-events-none');
+      backdrop.classList.add('opacity-100', 'pointer-events-auto');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function prefillAndOpenBooking(name) {
+      openBookingModal(name, `Interested in ${name}`);
+    }
+
+    function closeBookingModal() {
+      const b = document.getElementById('booking-modal-backdrop');
+      b.classList.add('opacity-0', 'pointer-events-none');
+      b.classList.remove('opacity-100', 'pointer-events-auto');
+      document.body.style.overflow = '';
+    }
+
+    function closeBookingModalOnBackdrop(e) {
+      if (e.target.id === 'booking-modal-backdrop') closeBookingModal();
+    }
+    window.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeBookingModal(); });
+
+    function genId(branch) {
+      const prefix = branch.includes('Mumbai') ? 'BND' : 'BLR';
+      return `AURA-${prefix}-${Math.floor(1000 + Math.random() * 9000)}`;
+    }
+
+    function handleModalBooking(e) {
+      e.preventDefault();
+      const name = document.getElementById('modal-patient-name').value.trim();
+      const phone = document.getElementById('modal-patient-phone').value.trim();
+      const treatment = document.getElementById('modal-treatment-select').value;
+      const branch = document.getElementById('modal-branch-select').value;
+      const date = document.getElementById('modal-date-select').value;
+      const slot = document.getElementById('modal-slot-select').value;
+      const notes = document.getElementById('modal-patient-notes').value.trim();
+      const bId = genId(branch);
+
+      document.getElementById('confirm-id').textContent = bId;
+      document.getElementById('confirm-name').textContent = name;
+      document.getElementById('confirm-treatment').textContent = treatment;
+      document.getElementById('confirm-branch').textContent = branch;
+      document.getElementById('confirm-schedule').textContent = `${date} (${slot})`;
+
+      const text = encodeURIComponent(`Hello Dr. Aarav Mehta (Aura Studio),\nI would like to confirm my consultation:\n• ID: ${bId}\n• Name: ${name}\n• Phone: ${phone}\n• Treatment: ${treatment}\n• Branch: ${branch}\n• Schedule: ${date} - ${slot}\n${notes ? '• Notes: ' + notes : ''}`);
+      document.getElementById('confirm-whatsapp-btn').href = `https://wa.me/919876543210?text=${text}`;
+
+      document.getElementById('modal-form-view').classList.add('hidden');
+      document.getElementById('modal-confirmation-view').classList.remove('hidden');
+      showToast(`Appointment logged! Ref: ${bId}`, "success");
+    }
+
+    function handleInlineBooking(e) {
+      e.preventDefault();
+      const name = document.getElementById('inline-patient-name').value.trim();
+      const phone = document.getElementById('inline-patient-phone').value.trim();
+      const treatment = document.getElementById('inline-treatment-select').value;
+      const branch = document.getElementById('inline-branch-select').value;
+      const date = document.getElementById('inline-date-select').value;
+      const slot = document.getElementById('inline-slot-select').value;
+      const notes = document.getElementById('inline-patient-notes').value.trim();
+      const bId = genId(branch);
+
+      document.getElementById('confirm-id').textContent = bId;
+      document.getElementById('confirm-name').textContent = name;
+      document.getElementById('confirm-treatment').textContent = treatment;
+      document.getElementById('confirm-branch').textContent = branch;
+      document.getElementById('confirm-schedule').textContent = `${date} (${slot})`;
+
+      const text = encodeURIComponent(`Hello Dr. Aarav Mehta (Aura Studio),\nI would like to confirm my consultation:\n• ID: ${bId}\n• Name: ${name}\n• Phone: ${phone}\n• Treatment: ${treatment}\n• Branch: ${branch}\n• Schedule: ${date} - ${slot}\n${notes ? '• Notes: ' + notes : ''}`);
+      document.getElementById('confirm-whatsapp-btn').href = `https://wa.me/919876543210?text=${text}`;
+
+      const b = document.getElementById('booking-modal-backdrop');
+      document.getElementById('modal-form-view').classList.add('hidden');
+      document.getElementById('modal-confirmation-view').classList.remove('hidden');
+      b.classList.remove('opacity-0', 'pointer-events-none');
+      b.classList.add('opacity-100', 'pointer-events-auto');
+      document.body.style.overflow = 'hidden';
+      showToast(`Appointment logged! Ref: ${bId}`, "success");
+    }
+
+    // Toast Helper
+    function showToast(msg, type = 'info') {
+      const c = document.getElementById('toast-container');
+      if (!c) return;
+      const t = document.createElement('div');
+      t.className = 'toast-animate pointer-events-auto px-4 py-2.5 rounded-xl bg-espresso text-white border border-gold-subtle shadow-xl flex items-center gap-2.5 text-xs';
+      t.innerHTML = `<i class="fa-solid fa-circle-check text-emerald-400"></i><span class="font-medium">${msg}</span>`;
+      c.appendChild(t);
+      setTimeout(() => { t.style.opacity = '0'; setTimeout(() => t.remove(), 300); }, 3500);
+    }
+  </script>
+</body>
+</html>
